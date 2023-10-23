@@ -1,3 +1,9 @@
 # Todo app
 
-This is a simple react project to use as a starting point
+React apps.
+
+Currently working: Todo App
+
+Developing: Weather API app
+
+Future projects: some project involving deploying a prediction model into react
