@@ -2,8 +2,6 @@
 
 React apps.
 
-Currently working: Todo App
+Currently working: Todo App, Weather API app
 
-Developing: Weather API app
-
-Future projects: some project involving deploying a prediction model into react
+Developing: 
