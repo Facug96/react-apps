@@ -10,24 +10,25 @@ const TodoWrapper = () => {
 
   
   const addTask = (task) =>{
-    console.log(tasks)
     setTasks([...tasks,{id: uuidv4(),task: task,
-      completed: false, isEditing: false}])
-      console.log(tasks)
+      completed: false}])
     }
     const toggleComplete = (id) => {
-      setTasks(tasks.map((task) => task.id === id ? {...tasks,completed: !task.completed}: task ))
+      setTasks(tasks.map((task) => task.id === id ? {...task, completed: !task.completed} : task ));
     }
+    const deleteTask = (id) => {setTasks(tasks.filter((task) => task.id !== id))}
+    console.log(tasks)
   return (
     <div className='TodoWrapper'>
       <TodoForm addTask = {addTask}/>
       {tasks.map(
-        (task) => (task.isEditing ? 
-          (<Todo task = {<p></p>} key = {task.id}/>) : 
-          (<Todo task={task} 
+        (task) => ( 
+          (<Todo 
+              task={task} 
               key = {task.id}
               toggleComplete={toggleComplete}
-              />))
+              deleteTask={deleteTask}
+              /> ))
       )}
     </div>
   )
