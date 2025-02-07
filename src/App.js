@@ -2,7 +2,7 @@ import {Routes, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
 import TodoWrapper from './components/TodoWrapper';
 import WeatherWrapper from './components/WeatherWrapper';
-import ImageGen from './components/ImageGen';
+import CryptoTracker from './components/CryptoTracker';
 import FrontPage from "./components/FrontPage";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route path='' element ={<FrontPage />}/>
           <Route path='tareas-app' element = {<TodoWrapper />} />
           <Route path='weather-app' element = {<WeatherWrapper />} />
-          <Route path='AI image generator' element = {<ImageGen />} />
+          <Route path='crypto-track' element = {<CryptoTracker />} />
         </Routes>
       </BrowserRouter>
     </div>
