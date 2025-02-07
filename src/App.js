@@ -2,7 +2,7 @@ import {Routes, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
 import TodoWrapper from './components/TodoWrapper';
 import WeatherWrapper from './components/WeatherWrapper';
-import WeatherWrapper from './components/WeatherWrapper';
+import ImageGen from './components/ImageGen';
 import FrontPage from "./components/FrontPage";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Route path='' element ={<FrontPage />}/>
           <Route path='tareas-app' element = {<TodoWrapper />} />
           <Route path='weather-app' element = {<WeatherWrapper />} />
-          <Route path='Data' element = {<WeatherWrapper />} />
+          <Route path='AI image generator' element = {<ImageGen />} />
         </Routes>
       </BrowserRouter>
     </div>
