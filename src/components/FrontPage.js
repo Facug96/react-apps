@@ -18,8 +18,8 @@ const FrontPage = () => {
         </Link>
       </div>
       <div>
-        <Link to = "/">
-          <button className="button-text"> Upcoming project </button>
+        <Link to = "/Data">
+          <button className="button-text"> DataProject </button>
         </Link>
       </div>
         </div>
