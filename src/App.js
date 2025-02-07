@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename = "/react-apps/">
         <Routes>
           <Route path='' element ={<FrontPage />}/>
           <Route path='tareas-app' element = {<TodoWrapper />} />
