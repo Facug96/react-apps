@@ -1,0 +1,30 @@
+name: Build and Deploy to GitHub Pages
+
+# Trigger the workflow on pushes to the 'main' branch (change if your branch is named differently).
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) Check out the code in the repo
+      - uses: actions/checkout@v2
+
+      # 2) Install Node dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 3) Build the React app
+      - name: Build
+        run: npm run build
+
+      # 4) Deploy the built files to a 'gh-pages' branch
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
