@@ -2,6 +2,7 @@ import {Routes, Route, BrowserRouter } from "react-router-dom";
 import './App.css';
 import TodoWrapper from './components/TodoWrapper';
 import WeatherWrapper from './components/WeatherWrapper';
+import WeatherWrapper from './components/WeatherWrapper';
 import FrontPage from "./components/FrontPage";
 
 function App() {
