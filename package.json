@@ -2,7 +2,7 @@
   "name": "simple-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":https://facug96.github.io/react-apps/,
+  "homepage": "https://facug96.github.io/react-apps/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
     "@fortawesome/free-brands-svg-icons": "^6.4.2",
