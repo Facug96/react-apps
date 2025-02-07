@@ -13,6 +13,7 @@ function App() {
           <Route path='' element ={<FrontPage />}/>
           <Route path='tareas-app' element = {<TodoWrapper />} />
           <Route path='weather-app' element = {<WeatherWrapper />} />
+          <Route path='Data' element = {<WeatherWrapper />} />
         </Routes>
       </BrowserRouter>
     </div>
