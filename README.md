@@ -3,5 +3,3 @@
 
 
 Currently working: Todo App, Weather API app
-
-Developing: 
