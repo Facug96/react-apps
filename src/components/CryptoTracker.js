@@ -7,7 +7,7 @@ function CryptoTracker() {
   const [error, setError] = useState('');
 
   // Replace with your actual API Gateway URL
-  const LAMBDA_ENDPOINT = 'https://abc123xyz.execute-api.us-east-1.amazonaws.com/get-crypto-data';
+  const LAMBDA_ENDPOINT = 'https://cpbr81aphi.execute-api.eu-west-1.amazonaws.com/cryptoDataProxy';
 
   const fetchData = async () => {
     setLoading(true);
