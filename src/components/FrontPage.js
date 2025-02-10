@@ -18,7 +18,7 @@ const FrontPage = () => {
         </Link>
       </div>
       <div>
-        <Link to = "/Data">
+        <Link to = "/crypto-track">
           <button className="button-text"> DataProject </button>
         </Link>
       </div>
